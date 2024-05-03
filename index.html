@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP STUDENTS SUBJECT ASSESSMENT APP</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="CSS" href="./index.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+        });
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <form id="itemForm"">
+            <label>
+                Name of Student:
+                <input type="text" id="nameInput">
+            </label>
+            <label>
+                Course:
+                <input type="text" id="courseInput">
+            </label>
+            <label>
+                Section:
+                <input type="text" id="sectionInput">
+            </label>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
